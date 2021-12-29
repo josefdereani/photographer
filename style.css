@@ -9,8 +9,8 @@
 
 html,body{height:100%;}
 body{
-	background-color: #fff;
-	background-image: url(sfond.jpg);
+	background-color: ;
+	background-image: url('sfondoanimal.jpg');
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size:cover;
@@ -67,11 +67,18 @@ body{
   z-index: 1;
 	width: 100%;
 	top: 0px;
-  height: 40px;
+  height: 80px;
   background: #000 ;
   padding: 10 0px;
   color: #fff;
 }
+.header #logo{
+      display:block;
+      margin:0px auto;
+      text-align:center;
+			width: 20%;
+			height: auto;
+      }
 .coda{
 	position:fixed;
   z-index: 1;
@@ -248,13 +255,30 @@ body{
   transform:scale(1.1);
 }
 
+@media screen and (max-width:300px) {
 
+		 }
 @media screen and (max-width:700px) {
 
 #copiright{
 	 width: 20px;
 	 height: 20px;
  }
+ .header{
+ 		position:fixed;
+   	z-index: 1;
+ 		width: 100%;
+ 		top: 0px;
+   	height: 65px;
+   	padding: 10 0px;
+ }
+ .header #logo{
+       display:block;
+       margin:0px auto;
+       text-align:center;
+ 			width: 150px;
+ 			height: auto;
+       }
 .coda p{
  	position:relative;
  	text-align: left;
