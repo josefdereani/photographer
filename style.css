@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css?family=Architects+Daughter');
+@import url('http://fonts.googleapis.com/css?family=Francois+One');
+@import url('https://fonts.googleapis.com/css?family=Frijole');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+
+
+html,body{height:100%;}
+body{
+	background-color: #000080;
+	background-image: url('texture.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.grid{
+  margin:60px 0px;
+	padding-bottom: 100px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#lightbox{
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .8);
+  display: none;
+}
+#lightbox.active{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#lightbox img{
+  max-width: 90%;
+  max-height: 80%;
+  padding: 0px;         cambia lo spessore della cornice !!!
+  background-color: black;
+  border: 1px solid white;
+}
+.grid img:hover{
+  transform:scale(1.1);
+}
+
+#firma{
+      display:block;
+      margin:0px auto;
+      text-align:center;
+			width: 30%;
+			height: auto;
+      }
+
+
+.testa{
+  position:fixed;
+  z-index: 1;
+	width: 100%;
+	top: 0px;
+  height: 40px;
+	background: #101010;
+  padding: 10 0px;
+  color: #fff;
+
+}
+.testa p{
+	position:relative;
+	text-align: right;
+  padding: 10px 30px;
+  font-size: 15px;
+  color: #ffffff;
+  font-family: 'Verdana';
+	}
+.testa a{
+	z-index: 2;
+	position: fixed;
+  font-size: 15px;
+  color: #fff;
+  font-family: 'Redressed', cursive;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0 10px;
+  transition: 0.4s;
+}
+.testa img{
+	z-index: 2;
+	position: fixed;
+  padding: 5px;
+  transition:0.5s;
+}
+.testa img:hover{
+  transform:scale(1.1);
+}
+#freccia{
+  width: 20px;
+  height: 20px;
+	padding: 10px 10px;
+}
+.content{
+  position: absolute;
+  margin: auto;
+  top: 30px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.social{
+  position: absolute;
+  margin: auto;
+  top: 150px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#logo{
+  width: 50px;
+  height: 50px;
+	transition: 0.5s;
+}
+
+.content h1{
+	font-family: 'Redressed', cursive;
+  font-size: 70px;
+  color: #000;
+}
+.content h2{
+  font-family: 'Redressed', cursive;
+  font-size: 25px;
+  color: #000;
+}
+.content span{
+  font-family: 'Redressed', cursive;
+  font-size: 70px;
+  color: #fff;
+  text-shadow: 5px 5px 5px black;
+}
+.content p{
+  padding: 10px 100px;
+  font-size: 25px;
+  color: #ffffff;
+  font-family: 'Redressed', cursive;
+}
+.content a{
+	padding: 0px 10px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #00ff00;
+  font-family: 'Redressed', cursive;
+}
+.testo{
+  position: absolute;
+  margin: auto;
+  top: 300px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.testo h1{
+  font-family: 'Verdana';
+  font-size: 15px;
+  color: #ffffff;
+}
+.testo h2{
+  font-family: 'Verdana';
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.testo p{
+  padding: 10px 100px;
+  font-size: 20px;
+  color: #ffffff;
+  font-family: 'Verdana';
+}
+.testo a{
+	padding: 0px 10px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #00ff00;
+  font-family: 'Verdana';
+}
+.social p{
+  padding: 10px 100px;
+  font-size: 25px;
+  color: #ffffff;
+  font-family: 'Verdana';
+}
+.social a{
+	padding: 0px 10px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  font-family: 'Verdana';
+}
+.social img{
+	padding-top: 50px;
+	padding-bottom: 100px;
+}
+
+.menu{
+	position: relative;
+	margin: auto;
+	padding-top: 0px;
+	margin:180px 0px;
+
+}
+.menu a{
+	text-decoration: none;
+
+}
+
+.menu p{
+  width: 500px;
+	height: 20px;
+  filter: grayscale(100%);
+  transition:0.5s;
+	margin-top: 10px;
+	color:#ffffff;
+	padding:5px;
+	outline: none;
+	border-radius: 1px;
+	font-size: 15px;
+	font-family: 'Verdana';
+	background: #101010;
+}
+.menu p:hover{
+  filter: grayscale(0);
+  transform:scale(1.1);
+	color: #;
+}
+.social img:hover{
+  transform:scale(1.1);
+}
+
+
+
+@media screen and (max-width:700px) {
+
+
+
+	#freccia{
+	  width: 20px;
+	  height: 20px;
+		padding: 8px 10px;
+	}
+
+	.testa{
+	  height: 35px;
+	}
+
+	.testa p{
+
+	  padding: 10px 20px;
+	  font-size: 12px;
+		}
+
+	.testo{
+	  position: absolute;
+	  margin: auto;
+	  top: 200px;
+	  left: 0;
+	  right: 0;
+	  bottom: 0;
+	}
+	.testo h1{
+	  font-family: 'Verdana';
+	  font-size: 15px;
+	  color: #ffffff;
+	}
+	.testo h2{
+	  font-family: 'Verdana';
+	  font-size: 15px;
+	  color: #ffffff;
+	}
+
+	.testo p{
+	  padding: 10px 20px;
+	  font-size: 15px;
+	  color: #ffffff;
+	  font-family: 'Verdana';
+	}
+	.testo a{
+		padding: 0px 10px;
+	  text-decoration: none;
+	  font-size: 25px;
+	  color: #00ff00;
+	  font-family: 'Verdana';
+	}
+
+
+ #firma{
+       display:block;
+       margin:0px auto;
+       text-align:center;
+ 			width: 200px;
+ 			height: auto;
+       }
+
+#logo{
+		margin-top: 10px;
+    width: 30px;
+    height: 30px;
+  }
+	.menu{
+		position: relative;
+			padding-top: 0px;
+	  margin:130px 0px;
+	}
+	.menu p{
+	  width: 200px;
+		margin-top: 10px;
+		border:0px solid white;
+		height:20px;
+		border-radius: 1px;
+		font-size: 15px;
+		padding-top: 7px;
+		text-align: center;
+	}
+	.album{
+		margin:200px 0px;
+	}
+	.album p{
+		width: 150px;
+		margin-top: 10px;
+		border:0.5px solid white;
+		height:20px;
+		border-radius: 10px;
+		font-size: 15px;
+	}
+.grid{
+		padding-top: 0px;
+		padding-bottom: 100px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+.social{
+    position: absolute;
+    margin: auto;
+    top: 100px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+.social img{
+		width: 120px;
+		height: 100px;
+	}
+.social p{
+		padding: 10px 20px;
+		font-size: 12px;
+	}
+.social a{
+		text-decoration: none;
+		font-size: 15px;
+	}
+
+.testa a{
+	padding: 0 0px;
+}
+.content{
+		padding-left: 10px;
+		padding-right: 10px;
+    margin: auto;
+    top: 30px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+.content h1{
+      font-size: 35px;
+    }
+.content h2{
+      font-size: 15px;
+    }
+.content span{
+      font-size: 30px;
+    }
+.content p{
+      padding: 10px 20px;
+      font-size: 15px;
+    }
+.content a{
+      text-decoration: none;
+      font-size: 15px;
+    }
+
+}
